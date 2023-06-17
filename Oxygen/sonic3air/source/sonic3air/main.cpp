@@ -13,6 +13,7 @@
 
 #include "oxygen/platform/PlatformFunctions.h"
 
+#include "sonic3air/helper/ArchipelagoIntegration.h"
 
 // HJW: I know it's sloppy to put this here... it'll get moved afterwards
 // Building with my env (msys2,gcc) requires this stub for some reason
@@ -46,6 +47,12 @@ int main(int argc, char** argv)
 	{
 		if (CommandForwarder::trySendCommand("ForwardedCommand:Url:" + arguments.mUrl))
 			return 0;
+	}
+
+	if (!arguments.mAPip.empty())
+	{
+		ArchipelagoIntegration::Init(arguments.mAPip.c_str(), arguments.mAPSlot.c_str(), "");
+		ArchipelagoIntegration::Start();
 	}
 
 	// Make sure we're in the correct working directory

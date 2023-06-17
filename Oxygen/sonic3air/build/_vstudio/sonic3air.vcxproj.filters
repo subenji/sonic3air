@@ -176,6 +176,9 @@
     <ClCompile Include="..\..\source\sonic3air\menu\mods\ModsMenuEntries.cpp">
       <Filter>menu\mods</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\sonic3air\helper\ArchipelagoIntegration.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -310,6 +313,9 @@
     </ClInclude>
     <ClInclude Include="..\..\source\sonic3air\menu\mods\ModResources.h">
       <Filter>menu\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\sonic3air\helper\ArchipelagoIntegration.h">
+      <Filter>helper</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -12,7 +12,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LocalDebuggerEnvironment>PATH=%PATH%;$(WorkspaceDir)\framework\bin\$(BuildCode);$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments />
+    <LocalDebuggerCommandArguments>-AP 127.0.0.1:38281 Benji</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LocalDebuggerEnvironment>PATH=%PATH%;$(WorkspaceDir)\framework\bin\$(BuildCode);$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>

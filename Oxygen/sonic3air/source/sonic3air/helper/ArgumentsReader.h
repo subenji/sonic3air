@@ -17,6 +17,10 @@ public:
 	std::wstring mExecutableCallPath;
 	std::string mUrl;
 
+	std::string mAPip;
+	std::string mAPSlot;
+	//std::string mAPPassword;
+
 	bool mPack = false;
 	bool mNativize = false;
 	bool mDumpCppDefinitions = false;
@@ -48,6 +52,12 @@ public:
 				else if (parameter == "-dumpcppdefinitions")
 				{
 					mDumpCppDefinitions = true;
+				}
+				else if (parameter == "-AP")
+				{
+					mAPip = argv[i + 1];
+					mAPSlot = argv[i + 2];
+					i = i + 2;
 				}
 			}
 		}
