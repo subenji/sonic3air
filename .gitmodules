@@ -1,0 +1,3 @@
+[submodule "Oxygen/sonic3air/source/external/APCpp"]
+	path = Oxygen/sonic3air/source/external/APCpp
+	url = ../../N00byKing/APCpp.git
